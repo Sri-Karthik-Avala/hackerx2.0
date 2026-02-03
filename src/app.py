@@ -16,6 +16,7 @@ APPCFG = LoadConfig()
 # app_pipeline = pipeline(
 #     "text-generation",
 #     model=model,
+
 #     tokenizer=tokenizer
 # )
 with gr.Blocks() as demo:

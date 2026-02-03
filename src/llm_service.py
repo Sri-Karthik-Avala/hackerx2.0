@@ -9,7 +9,7 @@ app = Flask(__name__)
 # Load the LLM and Tokenizer
 tokenizer = AutoTokenizer.from_pretrained(
     APPCFG.llm_engine, token=APPCFG.gemma_token, device=APPCFG.device)
-model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path="BioMistral/BioMistral-7B",
+model = AutoModelForCausalLM.from_pretrained(pretrained_model_name_or_path="meta-llama/Llama-3.2-3B-Instruct",
                                              token=APPCFG.gemma_token,
                                              torch_dtype=torch.float16,
                                              device_map=APPCFG.device

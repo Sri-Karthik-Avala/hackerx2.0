@@ -24,7 +24,7 @@ llm_config:
     engine: "BioMistral/BioMistral-7B"
     temperature: 0.1
     device: "cuda"
-    max_new_tokens: 4096
+    max_new_tokens: 8192
     do_sample: True
     top_k: 10
     top_p: 0.1
